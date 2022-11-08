@@ -1,0 +1,102 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:url("wallpapersden.com_gradient-4k_4243x2387.jpg");
+    background-size: cover;
+}
+.left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column; 
+    padding:50px;   
+    text-align: center;
+}
+#profilepic{
+    height:250px;
+    width:250px;
+    border-radius:50%;
+}
+.icons{
+    height:35px;
+    width:35px;
+    margin-left:10px; 
+    padding-right:10px;
+    border-radius:5%;
+}
+.icons:hover{
+    transform: scale(1.3);
+    transition:0.8s;
+}
+.accounts{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.contents{
+    height: 200px;
+    width:400px;
+    border-radius:20px;
+}
+.row{
+    display: grid;
+    grid-row-gap:20px;
+    grid-column-gap:20px;
+    grid-template-columns: auto auto;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:50px;
+}
+.image{
+    position:relative;
+}
+.img{
+    display:block;
+    width:100%;
+}
+.desc{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:50px;
+    opacity:0;
+    border-radius:20px;
+    text-align: center;
+}
+.desc:hover{
+    opacity:1;
+    transition: 0.8s;
+}
+@media screen and (max-width:838px){
+    .row{
+        grid-template-columns: auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:414px){
+    .contents{
+        height: 150px;
+        width:300px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #profilepic{
+        height:150px;
+        width:150px;
+    }
+}
