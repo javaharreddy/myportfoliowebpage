@@ -4,7 +4,6 @@ body{
     align-items: center;
     flex-direction: column;
     background-image: linear-gradient(to right, red , blue);
-    background-size: cover;
 }
 .left{
     display:flex;
