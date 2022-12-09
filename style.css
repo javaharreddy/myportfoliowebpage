@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:url("wallpapersden.com_gradient-4k_4243x2387.jpg");
+    background-image: linear-gradient(to right, red , blue);
     background-size: cover;
 }
 .left{
